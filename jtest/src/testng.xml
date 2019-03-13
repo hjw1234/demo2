@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+  <test name="Test">
+    <classes>
+      <class name="testng.GroupTest2"/>
+      <class name="testng.GroupTest"/>
+   
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="selenium">
+  <groups>
+  <run>
+  <include name="selenium-test"></include>
+  </run>
+  </groups>
+    <classes>
+      <class name="testng.GroupTest2"/>
+      <class name="testng.GroupTest"/>
+   
+    </classes>
+  </test>
+  
+  
+</suite> <!-- Suite -->
